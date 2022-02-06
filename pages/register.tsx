@@ -39,13 +39,8 @@ export default function Register() {
   const handleCreateUser = async (data: CreateUserFormData) => {
     try {
       const response = await api.post("/register", data);
-      const token = response.data.token;
-      setCookie(undefined, "mywallet.token", token);
-      api.defaults.headers["Authorization"] = `Bearer ${token}`;
-      router.push("/");
-    } catch (error) {
-      console.log(error);
-    }
+      router.push("/login");
+    } catch (error) {}
   };
   return (
     <div className={styled.container}>
