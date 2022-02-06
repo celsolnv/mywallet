@@ -2,31 +2,55 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  span {
+  small {
     color: rgb(241, 59, 59);
     font-weight: 600;
   }
-}
-.input {
-  width: 326px;
-  height: 58px;
+  .input-group > span,
+  .input {
+    height: 58px;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    span {
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 500;
 
-  border: none;
-  border-radius: 5px;
+      color: #555;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 2px 0px 0px 2px;
 
-  background-color: #fff;
-  color: #000;
+      display: flex;
+      align-items: center;
+    }
+    span + .input {
+      border-radius: 0 2px 2px 0;
+    }
+  }
+  .input {
+    flex: 1;
 
-  padding: 1rem;
-  margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
 
-  font-size: 20px;
+    background-color: #fff;
+    color: #000;
 
-  &[type="submit"] {
-    background-color: #a328d6;
-    color: #fff;
-    font-weight: 700;
+    padding: 1rem;
+    margin: 0.5rem 0;
+
     font-size: 20px;
-    cursor: pointer;
+
+    &[type="submit"] {
+      background-color: #a328d6;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+    }
   }
 }

@@ -20,8 +20,10 @@ export default function Add() {
           {...register("price")}
           error={errors.price}
           name="price"
-          type="number"
+          type="text"
           placeholder="Valor"
+          mask="currency"
+          prefix="R$"
         />
         <Input
           {...register("description")}
