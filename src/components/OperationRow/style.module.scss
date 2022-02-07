@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+
+  & > div:first-child {
+    time {
+      color: #c6c6c6;
+    }
+    span {
+      color: #000;
+    }
+  }
+}
+.input {
+  color: green;
+}
+.output {
+  color: red;
+}

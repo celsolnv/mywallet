@@ -81,12 +81,37 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   & > p {
     width: 180px;
+    height: 100%;
+
     font-size: 20px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
     text-align: center;
   }
+  position: relative;
+}
+.balance {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 0.5rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  strong {
+    color: #000;
+  }
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
 }

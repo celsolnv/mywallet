@@ -19,6 +19,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
     const { "mywallet.token": token } = parseCookies();
     if (!token) {
       singOut();
+    } else {
+      api.get("/me").then((response) => {
+        const { email, name } = response.data;
+        setUser({ email, name });
+      });
     }
   }, []);
 

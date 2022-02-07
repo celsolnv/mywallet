@@ -8,9 +8,18 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  h3 {
-    font-size: 26px;
-    font-weight: 700;
-    padding: 1.5rem 0;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    h3 {
+      font-size: 26px;
+      font-weight: 700;
+      padding: 1.5rem 0;
+    }
+    a {
+      font-size: 24px;
+    }
   }
 }
